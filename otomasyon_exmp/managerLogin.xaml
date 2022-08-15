@@ -1,0 +1,57 @@
+﻿<Window x:Class="otomasyon_exmp.managerLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:otomasyon_exmp"
+        mc:Ignorable="d"
+        Title="Yönetici Giriş Ekranı" Height="250" Width="600">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Name="Informations" HorizontalAlignment="Center">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="300" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Name="LabelsGrid" Margin="20">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <Label Content="Kullanıcı Adı" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15"/>
+                    <Label Content="Şifre" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.991,0.669" FontSize="15"/>
+                    <Label Content="Yönetici Numarası" HorizontalAlignment="Left" VerticalAlignment="Top"  FontSize="15"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Column="1" Name="TextBoxGrid">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="10">
+                    <TextBox x:Name="managerUser"  HorizontalAlignment="Left" TextWrapping="Wrap" Margin="10" VerticalAlignment="Top" Width="250" TextChanged="TextBox_TextChanged" />
+                    <TextBox x:Name="managerPassword"  HorizontalAlignment="Left" TextWrapping="Wrap" Margin="10" VerticalAlignment="Top" Width="250" TextChanged="TextBox_TextChanged" />
+                    <PasswordBox x:Name="managerID" PasswordChar="*" Margin="10" MaxLength="5"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1" Name="ButtonGrid">
+            <Button x:Name="button3" Background="Cornsilk" Click="managerLoginClick" Content="Giris" FontSize="23" Width="150" Height="50"/>
+        </Grid>
+
+        <!--<Button x:Name="button3" Background="Cornsilk" Click="managerLoginClick" Content="Giris" RenderTransformOrigin="0.85,0.64" Margin="350,229,330,133" FontSize="23" />
+
+        <TextBox x:Name="managerUser"  HorizontalAlignment="Left" Margin="290,59,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="250" TextChanged="TextBox_TextChanged" Height="28" />
+        <TextBox x:Name="manager"  HorizontalAlignment="Left" Margin="295,166,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="250" TextChanged="TextBox_TextChanged" Height="28"  />
+
+        <PasswordBox x:Name="managerPassword" Margin="290,99,170,275" PasswordChar="*" MaxLength="5"/>
+
+
+        <Label Content="Kullanıcı Adı" HorizontalAlignment="Left" Margin="144,59,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Şifre" HorizontalAlignment="Left" Margin="150,104,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.991,0.669" FontSize="15"/>
+        <Label Content="Yönetici Numarası" HorizontalAlignment="Left" Margin="146,169,0,0" VerticalAlignment="Top"  FontSize="15"/>-->
+
+
+    </Grid>
+</Window>

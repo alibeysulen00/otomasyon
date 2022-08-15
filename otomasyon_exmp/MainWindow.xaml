@@ -1,0 +1,35 @@
+﻿<Window x:Class="otomasyon_exmp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:otomasyon_exmp"
+        mc:Ignorable="d"
+        Title="Giriş Ekranı" Height="500" Width="400">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Name="Informations" HorizontalAlignment="Center"  Grid.RowSpan="2" Width="790" Height="259" VerticalAlignment="Top">
+            
+            <Image >
+                <Image.Source>
+                    <BitmapImage  UriSource="C:\Users\Ali\Source\Repos\otomasyon_exmp\otomasyon_exmp\Image\image.png" />
+                </Image.Source>
+            </Image>
+
+        </Grid> 
+
+        <Grid Grid.Row="1" Name="ButtonGrid" Margin="0,130,0,-220" Background="White">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,0,0,-74">
+                <Button x:Name="my_button" Background="Cornsilk" Click="studentLoginClick" Content="OgrenciGirisi"  Width="200" Height="50" />
+                <Button x:Name="my_button1" Background="Aqua" Click="managerLoginClick" Content="YoneticiGirisi" Width="200" Height="50" />
+                <Button x:Name="kayıt_ol" Content="Kayıt ol" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="200" Height="50" Click="registrationClick"/>
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
