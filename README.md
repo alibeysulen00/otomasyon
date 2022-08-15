@@ -1,1 +1,1 @@
-# otomasyon_exmp
+# Administrator and student login screen with WPF
